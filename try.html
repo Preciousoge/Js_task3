@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+function replace (deal) {
+	let jump = [];
+	
+	for(let i=1 ; i<=deal; i++){
+		
+		if (i%2==0 && i%3==0&& i%5==0){
+			jump.push("yu-gi-oh");
+
+		}
+		
+		else if (i%2==0 && i%3==0){
+			jump.push("yu-gi");
+		}
+
+		else if (i%2==0 && i%5==0){
+			jump.push("yu-oh");
+		}
+		
+		else if (i%3==0 && i%5==0){
+			jump.push("gi-oh");
+		}
+		
+		else if(i%2 == 0){
+			jump.push("yu");	
+		}
+		
+		else if (i%3==0){
+			jump.push("gi");
+		}
+		
+		else if (i%5==0){
+			jump.push("oh");
+		}
+		
+		
+		else{
+			jump.push(i);
+		}
+		
+}
+
+return jump;
+
+}
+
+ console.log(replace(100));
+ console.log(replace(160));
+
+</script>
+</body>
+</html>
